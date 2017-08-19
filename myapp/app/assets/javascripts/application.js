@@ -13,3 +13,16 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+console.log("Mein JavaScript")
+
+var body = document.getElementsByTagName("body")[0];
+
+window.addEventListener("DOMContentLoaded", function(){
+  var foo = document.getElementsByClassName("idea")
+  console.log(foo.length)
+  for (i = 0; i <= foo.length; i++){
+    if(i === 0){
+      foo[i].classList.remove('hidden');
+    }
+  }
+});
